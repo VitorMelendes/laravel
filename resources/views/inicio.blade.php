@@ -2,31 +2,72 @@
 
 @section('conteudo')
 
- <!-- Navbar -->
- <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">Adote um Amigo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Início</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Animais para Adoção</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<style>
+    
+  body {
+    background-color: #10454F;
+    color: #FFFFFF;
+  }
+  .navbar {
+    background-color: #506266;
+  }
+  .hero-section {
+    background-color: #818274;
+    padding: 100px 0;
+    text-align: center;
+  }
+  .hero-section h1 {
+    color: #BDE038;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  .btn-primary {
+    background-color: #BDE038;
+    border-color: #BDE038;
+    color: #10454F;
+    font-weight: bold;
+  }
+  .btn-primary:hover {
+    background-color: #A3AB78;
+    border-color: #A3AB78;
+  }
+  .animal-card {
+    background-color: #506266;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  .animal-card:hover {
+    transform: scale(1.05);
+  }
+  .animal-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .animal-card .card-body {
+    padding: 15px;
+    text-align: center;
+  }
+  .animal-card h5 {
+    color: #BDE038;
+    margin-bottom: 10px;
+  }
+  .footer {
+    background-color: #506266;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+
+
+  </style>
 
     <!-- Hero Section -->
     <section class="hero-section">

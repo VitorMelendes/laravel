@@ -1,6 +1,52 @@
 @extends('_partials/main')
 
 @section('conteudo')
+<style>
+  /*Detalhes do animal*/
+body {
+    background-color: #10454F;
+    color: #FFFFFF;
+  }
+  .navbar {
+    background-color: #506266;
+  }
+  .animal-details {
+    background-color: #506266;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 1000px;
+  }
+  .animal-details img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .animal-details h2 {
+    color: #BDE038;
+    margin-bottom: 1rem;
+  }
+  .animal-details p {
+    margin-bottom: 1rem;
+  }
+  .btn-primary {
+    background-color: #BDE038;
+    border-color: #BDE038;
+    color: #10454F;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  .btn-primary:hover {
+    background-color: #A3AB78;
+    border-color: #A3AB78;
+  }
+  .footer {
+    background-color: #506266;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+  }
+</style>
  <!-- Navbar -->
  <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">

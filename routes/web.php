@@ -20,4 +20,6 @@ Route::get('/listar-animais', [App\Http\Controllers\ListarAnimais::class, 'lista
 Route::get('/login', [App\Http\Controllers\Login::class, 'login'])->name('pagina-login');
 Route::get('/registro', [App\Http\Controllers\Registro::class, 'registro'])->name('pagina-registro');
 
+Route::post('/registro', [App\Http\Controllers\Registro::class, 'criarConta'])->name('pagina-registro');
+
 

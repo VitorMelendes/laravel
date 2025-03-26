@@ -1,11 +1,12 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Registro - Adote um Amigo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
+
+
+   
+
+
+  @extends('_partials/main')
+
+  @section('conteudo')
+<style>
       body {
         background-color: #10454F;
         color: #FFFFFF;
@@ -64,21 +65,20 @@
       .register-links a:hover {
         color: #A3AB78;
       }
-    </style>
-  </head>
-  <body>
+</style>
     <!-- Register Container -->
     <div class="register-container">
       <h2>Registro</h2>
-      <form>
+      <form action="{{ route('registro') }}" method="POST" >
+        @csrf
         <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Nome completo" required>
+          <input type="text" class="form-control" placeholder="Nome completo" name="nome_completo" required>
         </div>
         <div class="mb-3">
-          <input type="email" class="form-control" placeholder="E-mail" required>
+          <input type="email" class="form-control" placeholder="E-mail" name="email" required>
         </div>
         <div class="mb-3">
-          <input type="password" class="form-control" placeholder="Senha" required>
+          <input type="password" class="form-control" placeholder="Senha" name="senha" required>
         </div>
         <div class="mb-3">
           <input type="password" class="form-control" placeholder="Confirme a senha" required>
@@ -91,5 +91,4 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
-</html>
+    @endsection
