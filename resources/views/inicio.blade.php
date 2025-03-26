@@ -37,7 +37,7 @@
       </div>
     </section>
 
-    <!-- Animal Cards Section -->
+    <!-- Animal Card s Section -->
     <section class="container my-5">
       <div class="row">
         <div class="col-md-4">
