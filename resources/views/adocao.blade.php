@@ -77,18 +77,26 @@
         </div>
 
         <!-- Adoption Form -->
-        <form>
+        
+        <form action="{{ route('pagina-adocao') }}" method="POST">
+        @csrv
           <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Nome completo" required>
+            <input type="text" class="form-control" placeholder="Nome completo" name="nome" required>
           </div>
           <div class="mb-3">
-            <input type="email" class="form-control" placeholder="E-mail" required>
+            <input type="text" class="form-control" placeholder="Cor" name="cor" required>
           </div>
           <div class="mb-3">
-            <input type="tel" class="form-control" placeholder="Telefone" required>
+            <input type="tel" class="form-control" placeholder="Peso" name="peso" required>
           </div>
           <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Endereço" required>
+            <input type="text" class="form-control" placeholder="Idade" name="idade" required>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Especie" name="especie" required>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Raça" name="raca" required>
           </div>
           <div class="mb-3">
             <textarea class="form-control" placeholder="Por que você quer adotar este animal?" rows="4" required></textarea>
