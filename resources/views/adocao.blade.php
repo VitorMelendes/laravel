@@ -79,7 +79,7 @@
         <!-- Adoption Form -->
         
         <form action="{{ route('pagina-adocao') }}" method="POST">
-        @csrv
+        @csrf
           <div class="mb-3">
             <input type="text" class="form-control" placeholder="Nome completo" name="nome" required>
           </div>

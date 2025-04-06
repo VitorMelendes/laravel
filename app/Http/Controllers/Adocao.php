@@ -15,6 +15,6 @@ class Adocao extends Controller
         $animal = new Animal();
         $animal ->create($request->all());
 
-        return view('animal');
+        return view('detalhes-animal');
     }
 }
