@@ -6,11 +6,9 @@ use Illuminate\Http\Request;
 
 class Principal extends Controller
 {
-    function principal(){
-        return View("principal");
+    function view(){
+        return View("principal");//helper view
     }
 
-    function teste (){
-        echo "Testado com sucesso";
-    }
+    
 }
