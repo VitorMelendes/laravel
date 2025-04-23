@@ -1,4 +1,3 @@
 @foreach ($personagem as $heroi)
-    echo $heroi->nome;
-    echo $heroi->poder;
+    <h1>Nome {{$heroi('nome')}}</h1>
 @endforeach
