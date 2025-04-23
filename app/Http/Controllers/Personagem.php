@@ -16,6 +16,7 @@ class Personagem extends Controller
         $personagem->create($dados->all());
     }
     function listarPersonagem(){
-        return view('listar-personagem');
+        $personagem = Personagens::all()->toArray();
+        return view('listar-personagem', ['personagem'=> $personagem]);
     }
 }
